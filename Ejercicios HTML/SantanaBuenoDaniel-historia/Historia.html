@@ -1,101 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>El arma de neón</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 30px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #cc00ff;
+            font-size: 24px;
+            text-shadow: 5px 5px 10px #e600c7;
+        }
+
+        a {
+            color: #FF6EC7;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            border: 2px solid #00FFEF;
+            border-radius: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
 </head>
-<body style="background-color: black; color: rgb(0, 255, 55); font-family: 'Orbitron', Courier, monospace; font-size: 16px; padding: 20px;">
-    
-    <h1>Introducción</h1>
-    <h2>Lista de estilos usados</h2>
-    <ul>
-        <li>Color de fondo</li>
-        <li>Color de letra</li>
-        <li>Tipo de letra</li>
-        <li>Tamaño de letra</li>
-        <li>Imágenes</li>
-        <li>Enlaces</li>
-        <li>Listas</li>
-        <li>Tablas</li>
-    </ul>
+
+<body>
 
     <div style="text-align: center;">
-    <h1>El arma de neón</h1>
-    <h2>Una historia policiaca cyberpunk</h2>
+        <img src="portada.png" alt="Ciudad futurista">
+        <h2>Una historia policiaca cyberpunk</h2>
+        <h3>Por: Daniel Santana Bueno</h3>
+        <p>Una ciudad futurista llena de neones y sombras.</p>
     </div>
-    
-    <h3>Por: Daniel Santana Bueno</h3>
-
-
-    <h2>Introducción</h2>
-
-    <p>En una España distópica futurista donde predomina la corrupción, la delicuencia y los pecados capitales, </p>
-    <p>Dani es un pobre detective privado caido en desgracia que deambula por las calles  resolviendo casos menores para sobrevivir.
-    Una noche, recibe una llamada anónima que lo lleva a un oscuro callejón donde encuentra un arma de neón, </p>
-    un dispositivo experimental capaz de manipular la realidad. Intrigado por el hallazgo, Dani decide investigar su origen.</p>
-
-    <div> 
-        <img src="detective.jpg" alt="Dani el detective" style="width: 600px; float:right; border: 5px solid rgb(212, 0, 255); border-radius: 30px; ">
-        <p>Un hombre solitario en un mundo corrupto.</p>
-    </div>  
-
-    <h2>Capitulo 1</h2>
-
-    <p>Mientras investiga, Dani se encuentra con Maria, una hacker experta que trabaja para una corporación poderosa y corrupta.
-    Maria revela que el arma de neón fue creada por la corporación para controlar a la población a través de la manipulación mental.
-    Juntos, deciden unir fuerzas para desmantelar los planes de la corporación y exponer la verdad al mundo.</p>
-    <p>A medida que se adentran en el oscuro mundo de la tecnología y la corrupción, Dani y Maria enfrentan peligros mortales y traiciones inesperadas.
-    Descubren que la corporación está dirigida por un hombre llamado Luis, un magnate despiadado que hará cualquier cosa para proteger sus secretos.</p>
-
-    
-
-    <h2>Capitulo 2</h2>
-
-    <p>Con la ayuda de Maria, Dani logra infiltrarse en la sede de la corporación y obtener pruebas incriminatorias contra Luis.
-    Sin embargo, son descubiertos y deben enfrentarse a un ejército de mercenarios armados con tecnología avanzada.
-    En una batalla épica, Dani utiliza el arma de neón para desactivar las armas de los mercenarios y escapar con vida.</p>
 
     <div>
-        <img src="arma.jpg" alt="Arma de neón" style="width: 600px;margin-right: 20px; float:left; border: 5px solid rgb(212, 0, 255); border-radius: 30px;">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#Introduccion">Introducción</a></li>
+            <li><a href="#Capitulo1">Capítulo 1</a></li>
+            <li><a href="#Capitulo2">Capítulo 2</a></li>
+            <li><a href="#Capitulo3">Capítulo 3</a></li>
+            <li><a href="#Capitulo4">Capítulo 4</a></li>
+            <li><a href="#Conclusion">Conclusión</a></li>
+        </ul>
     </div>
 
-    <h2>Capitulo 3</h2>
+    <h2 id="Introduccion">Introducción</h2>
 
-    <p>Decididos a acabar con la corrupción de una vez por todas, Dani y Maria planean exponer a Luis en una conferencia de prensa.
-    Con la ayuda de un grupo de rebeldes, logran infiltrarse en el evento y revelar la verdad al mundo.
-    Sin embargo, Luis no se rinde fácilmente y desata un caos total en la conferencia, poniendo en peligro a todos los presentes.</p>
+    <p>
+        En una España distópica futurista donde predomina la corrupción, la delincuencia
+        y los pecados capitales, Dani es un pobre detective privado caído
+        en desgracia que deambula por las calles resolviendo casos menores para sobrevivir.
+        Una noche, recibe una llamada anónima
+        que lo lleva a un oscuro callejón donde encuentra un arma de neón,
+        un dispositivo experimental capaz de manipular la realidad. Intrigado
+        por el hallazgo, Dani decide investigar su origen.
+    </p>
 
-    <h2>Capitulo 4</h2>
 
-    <p>En medio del caos, Dani utiliza el arma de neón para crear una distracción y salvar a los inocentes.
-    Con la ayuda de Maria, logran capturar a Luis y entregarlo a las autoridades
-    junto con las pruebas incriminatorias contra la corporación.</p>
 
-    
-    <h2>Conclusión</h2>
-        
     <div>
-        <img src="final.png" alt="Epic battle" style="width: 600px; float:right; border: 5px solid rgb(212, 0, 255); border-radius: 30px;">
+        <h2 id="Capitulo1">Capítulo 1</h2>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="1.png" alt="Capítulo 1" width="300">
+            <p>
+                Mientras investiga, Dani descubre que el arma de neón está vinculada
+                a una poderosa corporación dirigida por un hombre llamado Luis,
+                quien utiliza la tecnología para controlar a la población y mantener su poder.
+                Decidido a detenerlo, Dani se une a una hacker llamada Maria, quien
+                también busca justicia contra la corporación.
+            </p>
+        </div>
     </div>
 
-    <p>Con la caída de la corporación, la ciudad comienza a recuperarse de la corrupción y la opresión.
-    <p>Dani y Maria se convierten en héroes locales, pero deciden mantener un perfil bajo y continuar su trabajo como detectives privados.</p>
-    <p>La filosofía del arma de neón les ha enseñado que el poder puede ser tanto una bendición como una maldición, y que la verdadera justicia proviene de la valentía y la integridad.</p>
-    <p> el arma de neón es destruida para evitar que caiga en las manos equivocadas, Dani y Maria saben que siempre habrá nuevas amenazas que enfrentar en su lucha por la justicia en un mundo oscuro y peligroso.</p>
-
-    <p>La ciudad futurista se alza en el horizonte, un símbolo de esperanza y renovación.</p>
-
-    <p>Fin</p>
-    
     <div>
-        <img src="end.png" alt="The end" style="width: 400px; float:left; border: 5px solid rgb(212, 0, 255); border-radius: 30px;">
+        <h2 id="Capitulo2">Capítulo 2</h2>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="2.png" alt="Capítulo 2" width="300">
+            <div>
+                <p>Con la ayuda de Maria, Dani logra infiltrarse en la sede de la corporación y obtener pruebas
+                    incriminatorias contra Luis. Sin embargo, son descubiertos y deben enfrentarse a un ejército de
+                    mercenarios armados con tecnología avanzada. En una batalla épica, Dani utiliza el arma de neón para
+                    desactivar las armas de los mercenarios y escapar con vida.</p>
+            </div>
+        </div>
     </div>
 
+    <div>
+        <h2 id="Capitulo3">Capítulo 3</h2>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="3.png" alt="Capítulo 3" width="300">
+            <div>
+                <p>Con las pruebas en mano, Dani y Maria deciden exponer a Luis y su corporación al público. Utilizando
+                    el arma de neón, transmiten en vivo las pruebas a través de las redes sociales, revelando la
+                    corrupción y los crímenes de Luis. La población, indignada, se levanta contra la corporación y exige
+                    justicia.</p>
+            </div>
+        </div>
+    </div>
 
- </div>
+    <div>
+        <h2 id="Capitulo4">Capítulo 4</h2>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="4.png" alt="Capítulo 4" width="300">
+            <div>
+                <p>Finalmente, Luis es arrestado y su corporación desmantelada. Dani y Maria son reconocidos como héroes
+                    por su valentía y determinación. La ciudad comienza a reconstruirse, con la esperanza de un futuro
+                    mejor y más justo para todos sus habitantes. El arma de neón, ahora en manos seguras, simboliza la
+                    lucha contra la opresión y la búsqueda de la verdad en un mundo oscuro y corrupto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 id="Conclusion">Conclusión</h2>
+        <p>Esta historia nos muestra cómo incluso en los entornos más oscuros, la verdad y la justicia pueden prevalecer
+            cuando hay valor, inteligencia y voluntad de cambiar el mundo.</p>
+    </div>
+
 </body>
+
 </html>
