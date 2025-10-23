@@ -7,13 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <style>
         body {
             font-family: 'Orbitron', sans-serif;
             background-color: #121212;
             color: #E0E0E0;
+            size: 60px;
             margin: 30px;
+            background-image: url("creditos.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         h1,
@@ -21,21 +26,24 @@
         h3 {
             color: #cc00ff;
             font-size: 24px;
-            text-shadow: 5px 5px 10px #e600c7;
+            text-shadow: 5px 5px 10px #cc00ff;
         }
 
         a {
-            color: #FF6EC7;
+            color: #ffffff;
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
+            color: #cc00ff;
+            text-shadow: 5px 5px 10px #cc00ff;
         }
 
         img {
-            border: 2px solid #00FFEF;
+            border: 2px solid #00e1ff;
             border-radius: 10px;
+            width: 300px;
         }
 
         p {
@@ -44,17 +52,18 @@
     </style>
 </head>
 
-<body>
+<body id="body">
 
     <div style="text-align: center;">
         <img src="portada.png" alt="Ciudad futurista">
         <h2>Una historia policiaca cyberpunk</h2>
         <h3>Por: Daniel Santana Bueno</h3>
-        <p>Una ciudad futurista llena de neones y sombras.</p>
+        <q>En las sombras de neón de la ciudad, los recuerdos son más reales que la carne, y la humanidad se mide en
+            lágrimas bajo la lluvia.</q>
     </div>
 
     <div>
-        <h2>Índice</h2>
+        <h2 style="color: ;" id="indice">Índice</h2>
         <ul>
             <li><a href="#Introduccion">Introducción</a></li>
             <li><a href="#Capitulo1">Capítulo 1</a></li>
@@ -65,7 +74,7 @@
         </ul>
     </div>
 
-    <h2 id="Introduccion">Introducción</h2>
+    <h2 id="Introduccion"><a href="#indice">Introducción</a></h2>
 
     <p>
         En una España distópica futurista donde predomina la corrupción, la delincuencia
@@ -78,66 +87,75 @@
     </p>
 
 
-
-    <div>
-        <h2 id="Capitulo1">Capítulo 1</h2>
-        <div style="display: flex; align-items: center; gap: 20px;">
-            <img src="1.png" alt="Capítulo 1" width="300">
-            <p>
-                Mientras investiga, Dani descubre que el arma de neón está vinculada
-                a una poderosa corporación dirigida por un hombre llamado Luis,
-                quien utiliza la tecnología para controlar a la población y mantener su poder.
-                Decidido a detenerlo, Dani se une a una hacker llamada Maria, quien
-                también busca justicia contra la corporación.
-            </p>
-        </div>
+    <h2 id="Capitulo1"><a href="#indice">Capítulo 1</a></h2>
+    <div style="display: flex;">
+        <img src="1.png" alt="Capítulo 1" style="margin-right: 20px;">
+        <p>
+            Mientras investiga, Dani descubre que el arma de neón está vinculada
+            a una poderosa corporación dirigida por un hombre llamado Luis,
+            quien utiliza la tecnología para controlar a la población y mantener su poder.
+            Decidido a detenerlo, Dani se une a un hacker llamado Juan, quien
+            también busca justicia contra la corporación.
+        </p>
     </div>
 
-    <div>
-        <h2 id="Capitulo2">Capítulo 2</h2>
-        <div style="display: flex; align-items: center; gap: 20px;">
-            <img src="2.png" alt="Capítulo 2" width="300">
-            <div>
-                <p>Con la ayuda de Maria, Dani logra infiltrarse en la sede de la corporación y obtener pruebas
-                    incriminatorias contra Luis. Sin embargo, son descubiertos y deben enfrentarse a un ejército de
-                    mercenarios armados con tecnología avanzada. En una batalla épica, Dani utiliza el arma de neón para
-                    desactivar las armas de los mercenarios y escapar con vida.</p>
-            </div>
-        </div>
+    <h2 id="Capitulo2"><a href="#indice">Capítulo 2</a></h2>
+    <div style="display: flex;">
+        <img src="2.png" alt="Capítulo 2" width="300" style="margin-right: 20px;">
+
+        <p>Juntos, Dani y Juan elaboran un plan para infiltrarse en la corporación y obtener pruebas
+            de sus actividades ilegales. Utilizando el arma de neón, logran evadir la seguridad y acceder
+            a los archivos secretos de Luis. Sin embargo, durante la misión, son descubiertos y deben
+            enfrentarse a los guardias de seguridad en una intensa batalla llena de acción y tecnología
+            avanzada.
+        </p>
     </div>
 
-    <div>
-        <h2 id="Capitulo3">Capítulo 3</h2>
-        <div style="display: flex; align-items: center; gap: 20px;">
-            <img src="3.png" alt="Capítulo 3" width="300">
-            <div>
-                <p>Con las pruebas en mano, Dani y Maria deciden exponer a Luis y su corporación al público. Utilizando
-                    el arma de neón, transmiten en vivo las pruebas a través de las redes sociales, revelando la
-                    corrupción y los crímenes de Luis. La población, indignada, se levanta contra la corporación y exige
-                    justicia.</p>
-            </div>
-        </div>
+    <h2 id="Capitulo3"><a href="#indice">Capítulo 3</a></h2>
+    <div style="display: flex;">
+        <img src="3.jpg" alt="Capítulo 3" width="300" style="margin-right: 20px;">
+        <p>
+            Con las pruebas en mano, Dani y Juan deciden exponer a Luis y su corporación al público. Utilizando
+            el arma de neón, transmiten en vivo las pruebas a través de las redes sociales, revelando la
+            corrupción y los crímenes de Luis. La población, indignada, se levanta contra la corporación y exige
+            justicia.
+        </p>
     </div>
 
-    <div>
-        <h2 id="Capitulo4">Capítulo 4</h2>
-        <div style="display: flex; align-items: center; gap: 20px;">
-            <img src="4.png" alt="Capítulo 4" width="300">
-            <div>
-                <p>Finalmente, Luis es arrestado y su corporación desmantelada. Dani y Maria son reconocidos como héroes
-                    por su valentía y determinación. La ciudad comienza a reconstruirse, con la esperanza de un futuro
-                    mejor y más justo para todos sus habitantes. El arma de neón, ahora en manos seguras, simboliza la
-                    lucha contra la opresión y la búsqueda de la verdad en un mundo oscuro y corrupto.</p>
-            </div>
-        </div>
+    <h2 id="Capitulo4"><a href="#indice">Capítulo 4</a></h2>
+    <div style="display: flex;">
+        <img src="4.jpg" alt="Capítulo 4" width="300" style="margin-right: 20px;">
+        <p>Finalmente, Luis es arrestado y su corporación desmantelada. Dani y Juan son reconocidos como héroes
+            por su valentía y determinación. La ciudad comienza a reconstruirse, con la esperanza de un futuro
+            mejor y más justo para todos sus habitantes. El arma de neón, ahora en manos seguras, simboliza la
+            lucha contra la opresión y la búsqueda de la verdad en un mundo oscuro y corrupto.
+            Ahora a Dani se le acercan todas las chicas de la ciudad
+        </p>
     </div>
 
-    <div>
-        <h2 id="Conclusion">Conclusión</h2>
+    <h2 id="Conclusion"><a href="#indice">Conclusión</a></h2>
+    <div style="display: flex;">
+        <img src="conclusión.jpg" alt="Conclusión" width="300" style="margin-right: 20px;">
         <p>Esta historia nos muestra cómo incluso en los entornos más oscuros, la verdad y la justicia pueden prevalecer
             cuando hay valor, inteligencia y voluntad de cambiar el mundo.</p>
     </div>
 
+    <div style="text-align: center;font-size: 30px; margin-top: 40px;">
+        <a href="creditos.html">Créditos</a>
+    </div>
+
+
+    <div style="text-align: center; margin-top: 40px;">
+        <form action="/procesar-opinion" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="opinion">¿Qué te ha parecido la historia?</label><br>
+            <textarea id="opinion" name="opinion" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Enviar opinión</button>
+        </form>
+    </div>
 </body>
 
 </html>
