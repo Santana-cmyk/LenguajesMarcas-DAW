@@ -3,6 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <!--
+        creditos.html
+        Autor: Daniel Santana Bueno (contenido)
+        Descripción: página de créditos y recursos para el ejercicio "El arma de neón".
+        Notas: para proyectos reales, mueve el CSS a un archivo externo y evita usar imágenes
+               con nombres con tildes en el sistema de ficheros por compatibilidad.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El arma de neón (Créditos)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,26 +17,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
+        /* Estilos generales */
         body {
+            /* Tipografía y esquema de color general */
             font-family: 'Orbitron', sans-serif;
+            font-size: 30px;
             background-color: #121212;
             color: #E0E0E0;
-            size: 60px;
             margin: 30px;
-            background-image: url("creditos.gif");
+            background-image: url(img/creditos.gif);
             background-repeat: no-repeat;
-            filter: brightness(50%);
+            background-size: cover;
+            background-attachment: fixed;
         }
-       
 
+        /* Capa oscura fija que mejora la lectura sobre el fondo animado */
+        .filtro-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1; /* se sitúa detrás del contenido */
+        }
+
+        /* Estilos de encabezados: color neón y sombra para estilo futurista */
         h1,
         h2,
         h3 {
             color: #cc00ff;
-            font-size: 24px;
+            font-size: 40px;
             text-shadow: 5px 5px 10px #cc00ff;
         }
 
+        /* Enlaces: color por defecto y efecto hover */
         a {
             color: #ffffff;
             text-decoration: none;
@@ -41,34 +63,59 @@
             text-shadow: 5px 5px 10px #cc00ff;
         }
 
+        /* Imágenes: borde y esquinas redondeadas (útil para miniaturas) */
         img {
             border: 2px solid #000000;
             border-radius: 10px;
         }
 
+        /* Párrafos: espaciamiento para mejorar lectura */
         p {
-            line-height: 1.6;
+            line-height: 1.6; 
         }
     </style>
 
 </head>
 
 <body id="body">
-    <a href="Historia.html"><h1>«</h1></a>
-    <h1>Créditos</h1>
-    <p>Escritor: Daniel Santana Bueno</p>
-    <p>Ilustraciones: Propiedad de las películas de ciencia ficción blade runner y blade runner 2049</p>
-    <p>Fecha de Publicación: 23/10/2025</p>
-    <p>Licencia: Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional (CC BY-NC-ND 4.0)</p>
+    <!-- Capa oscura fija (mejora el contraste sobre el gif de fondo) -->
+    <div class="filtro-fondo"></div>
 
-    <h1>Lista de recursos HTML usados</h1>
+    <!-- Enlace para volver a la página principal de la historia -->
+    <a href="Historia.html">
+        <h1>« Volver a la historia</h1>
+    </a>
+
+    <!-- Título principal de la página de créditos -->
+    <h1>Créditos</h1>
+
+    <!-- Créditos del contenido: escritor e ilustraciones -->
+    <p>Escritor: Daniel Santana Bueno</p>
+    <p>Ilustraciones: Propiedad de las películas de ciencia ficción Blade Runner y Blade Runner 2049</p>
+
+    <!-- Lista de recursos y elementos HTML utilizados en el ejercicio -->
+    <h1>Lista de etiquetas usadas en <em>Historia.html</em></h1>
+    <p>A continuación se muestran como entidades HTML todas las etiquetas utilizadas en el archivo:</p>
     <ul>
-        <li>Elementos de texto: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;p&gt;, &lt;q&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;a&gt;</li>
-        <li>Elementos de estructura: &lt;div&gt;, &lt;body&gt;, &lt;head&gt;, &lt;html&gt;</li>
-        <li>Elementos de metadatos: &lt;meta&gt;, &lt;title&gt;, &lt;link&gt;</li>
-        <li>Elemento de imagen: &lt;img&gt;</li>
-        <li>Estilos CSS embebidos en &lt;style&gt;</li>
+        <li>&lt;head&gt;</li>
+        <li>&lt;title&gt;</li>
+        <li>&lt;link&gt;</li>
+        <li>&lt;style&gt;</li>
+        <li>&lt;body&gt;</li>
+        <li>&lt;div&gt;</li>
+        <li>&lt;audio&gt;</li>
+        <li>&lt;img&gt;</li>
+        <li>&lt;h2&gt;</li>
+        <li>&lt;h3&gt;</li>
+        <li>&lt;q&gt;</li>
+        <li>&lt;ul&gt;</li>
+        <li>&lt;li&gt;</li>
+        <li>&lt;a&gt;</li>
+        <li>&lt;p&gt;</li>
+        <li>&lt;!-- comentarios HTML --&gt;</li>
     </ul>
+
+    <!-- Referencias externas útiles para aprender más -->
     <h1>Referencias</h1>
     <ul>
         <li><a href="https://www.w3schools.com/">W3Schools</a></li>

@@ -4,23 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <title>El arma de neón</title>
+    <!--
+        Archivo: Historia.html
+        Autor: Daniel Santana Bueno
+       
+    -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
+
     <style>
+        /* ------------------------------------------------------------------
+           Estilos principales
+        ------------------------------------------------------------------ */
         body {
             font-family: 'Orbitron', sans-serif;
             background-color: #121212;
             color: #E0E0E0;
-            size: 60px;
+            font-size: 20px;
             margin: 30px;
-            background-image: url("creditos.gif");
+            background-image: url("img/creditos.gif");
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
         }
 
+        /* Capa semitransparente que oscurece el fondo animado (gif) */
+        .filtro-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+
+        /* Encabezados: color neón y sombra para dar estética futurista */
         h1,
         h2,
         h3 {
@@ -29,6 +53,7 @@
             text-shadow: 5px 5px 10px #cc00ff;
         }
 
+        /* Enlaces: color y comportamiento al pasar el ratón */
         a {
             color: #ffffff;
             text-decoration: none;
@@ -40,30 +65,63 @@
             text-shadow: 5px 5px 10px #cc00ff;
         }
 
+        /* Imágenes: borde con color de acento y esquinas redondeadas */
         img {
             border: 2px solid #00e1ff;
             border-radius: 10px;
             width: 300px;
         }
 
+        /* Portada: imagen principal, título y lema */
+        .portada {
+            text-align: center;
+            font-size: 20px;
+            /* Aumenta el tamaño del texto */
+            margin-top: 40px;
+        }
+
+        /* Imagen de portada más grande */
+        .portada img {
+            width: 500px;
+
+        }
+
+
+        /* Párrafos: legibilidad mediante interlineado y margen */
         p {
             line-height: 1.6;
+            margin-left: 20px;
         }
     </style>
 </head>
 
 <body id="body">
 
-    <div style="text-align: center;">
-        <img src="portada.png" alt="Ciudad futurista">
-        <h2>Una historia policiaca cyberpunk</h2>
-        <h3>Por: Daniel Santana Bueno</h3>
-        <q>En las sombras de neón de la ciudad, los recuerdos son más reales que la carne, y la humanidad se mide en
-            lágrimas bajo la lluvia.</q>
+
+    <!-- Fondo oscuro fijo para mejorar contraste sobre el gif -->
+    <div class="filtro-fondo"></div>
+
+    <!-- Controles de audio: intentamos autoplay, pero muchos navegadores
+         requieren interacción del usuario. El control permite pausar/reanudar. -->
+    <div style="text-align: right; margin-bottom: 20px;">
+        <audio autoplay loop controls>
+            <source src="music/musica.mp3" type="audio/mpeg">
+        </audio>
     </div>
 
+    <!-- Portada: imagen principal, título y lema -->
+    <div class="portada">
+        <img src="img/portada.png" alt="Ciudad futurista">
+
+        <h2>Una historia de Blade Runner</h2>
+        <h3>Por: Daniel Santana Bueno</h3>
+        <q>Lema: En un mundo donde los recuerdos se fabrican y la humanidad se cuestiona, solo los que sueñan con
+            libertad desafían la oscuridad.</q>
+    </div>
+
+    <!-- Índice: enlaces internos a secciones de la página -->
     <div>
-        <h2 style="color: ;" id="indice">Índice</h2>
+        <h2 id="indice">Índice</h2>
         <ul>
             <li><a href="#Introduccion">Introducción</a></li>
             <li><a href="#Capitulo1">Capítulo 1</a></li>
@@ -74,88 +132,101 @@
         </ul>
     </div>
 
-    <h2 id="Introduccion"><a href="#indice">Introducción</a></h2>
+    <!-- Introducción: resumen de la historia -->
+    <h2 id="Introduccion"><a href="#indice">Una historia de blade runner</a></h2>
 
     <p>
-        En una España distópica futurista donde predomina la corrupción, la delincuencia
-        y los pecados capitales, Dani es un pobre detective privado caído
-        en desgracia que deambula por las calles resolviendo casos menores para sobrevivir.
-        Una noche, recibe una llamada anónima
-        que lo lleva a un oscuro callejón donde encuentra un arma de neón,
-        un dispositivo experimental capaz de manipular la realidad. Intrigado
-        por el hallazgo, Dani decide investigar su origen.
+        En esta historia alternativa de Blade Runner, seguimos a Dani, un detective
+        en una ciudad futurista plagada de corrupción y crimen. Dani recibe un caso
+        que lo llevará a enfrentarse a la peligrosa banda que utiliza el arma de neón.
+        A medida que avanza en su investigación, Dani descubrirá secretos oscuros
+        sobre la ciudad y su propia identidad.
     </p>
 
 
+    <!-- Capítulo 1: presentación del conflicto y personajes principales -->
     <h2 id="Capitulo1"><a href="#indice">Capítulo 1</a></h2>
     <div style="display: flex;">
-        <img src="1.png" alt="Capítulo 1" style="margin-right: 20px;">
+        <img src="img/1.png" alt="Capítulo 1">
         <p>
-            Mientras investiga, Dani descubre que el arma de neón está vinculada
-            a una poderosa corporación dirigida por un hombre llamado Luis,
-            quien utiliza la tecnología para controlar a la población y mantener su poder.
-            Decidido a detenerlo, Dani se une a un hacker llamado Juan, quien
-            también busca justicia contra la corporación.
+            Los androides han comenzado a rebelarse contra sus creadores, y la ciudad está al borde del caos.
+            Dani, un detective endurecido por la vida, es asignado para investigar una serie de robos
+            cometidos por una banda que utiliza un arma de neón capaz de desactivar cualquier sistema.
+            Durante su investigación, Dani se encuentra con Juan, un ex miembro de la banda que busca redimirse. Juntos,
+            deciden unir fuerzas para detener a la banda y descubrir quién está detrás de los robos.
+            mientras tanto, la ciudad se sumerge en un estado de tensión creciente, con enfrentamientos entre humanos y
+            androides
+            volviéndose cada vez más comunes.
         </p>
     </div>
 
+    <!-- Capítulo 2: aparición de la mujer misteriosa y giro en la trama -->
     <h2 id="Capitulo2"><a href="#indice">Capítulo 2</a></h2>
     <div style="display: flex;">
-        <img src="2.png" alt="Capítulo 2" width="300" style="margin-right: 20px;">
+        <img src="img/2.png" alt="Capítulo 2">
 
-        <p>Juntos, Dani y Juan elaboran un plan para infiltrarse en la corporación y obtener pruebas
-            de sus actividades ilegales. Utilizando el arma de neón, logran evadir la seguridad y acceder
-            a los archivos secretos de Luis. Sin embargo, durante la misión, son descubiertos y deben
-            enfrentarse a los guardias de seguridad en una intensa batalla llena de acción y tecnología
-            avanzada.
+        <p>
+            Una mujer misteriosa se acerca a Dani con información crucial sobre la banda y su líder, un hombre llamado
+            Luis. Ella revela que Luis tiene un plan maestro para desatar el caos en la ciudad utilizando el arma de
+            neón.
+            Dani y Juan se dan cuenta de que deben actuar rápidamente para detenerlo antes de que sea demasiado tarde.
+            Dani comienza a cuestionar sus propias lealtades y la naturaleza de la humanidad mientras se adentra más en
+            el oscuro mundo de la banda. A medida que se involucra más en la investigación, comienza a dudar de la
+            moralidad de sus acciones y de la línea entre el bien y el mal.
         </p>
     </div>
 
+    <!-- Capítulo 3: infiltración y enfrentamientos -->
     <h2 id="Capitulo3"><a href="#indice">Capítulo 3</a></h2>
     <div style="display: flex;">
-        <img src="3.jpg" alt="Capítulo 3" width="300" style="margin-right: 20px;">
+        <img src="img/3.png" alt="Capítulo 3">
         <p>
-            Con las pruebas en mano, Dani y Juan deciden exponer a Luis y su corporación al público. Utilizando
-            el arma de neón, transmiten en vivo las pruebas a través de las redes sociales, revelando la
-            corrupción y los crímenes de Luis. La población, indignada, se levanta contra la corporación y exige
-            justicia.
+            Una serie de persecuciones y enfrentamientos, Dani y Juan logran infiltrarse en la base de operaciones de la
+            banda.
+            Allí, descubren que Luis planea utilizar el arma de neón para tomar el control de la ciudad y establecer un
+            régimen de terror. Con la ayuda de la mujer misteriosa, que resulta ser una androide, logran desbaratar los
+            planes de
+            régimen de terror.
         </p>
     </div>
 
+    <!-- Capítulo 4: desenlace, sacrificio y reflexión final -->
     <h2 id="Capitulo4"><a href="#indice">Capítulo 4</a></h2>
     <div style="display: flex;">
-        <img src="4.jpg" alt="Capítulo 4" width="300" style="margin-right: 20px;">
-        <p>Finalmente, Luis es arrestado y su corporación desmantelada. Dani y Juan son reconocidos como héroes
-            por su valentía y determinación. La ciudad comienza a reconstruirse, con la esperanza de un futuro
-            mejor y más justo para todos sus habitantes. El arma de neón, ahora en manos seguras, simboliza la
-            lucha contra la opresión y la búsqueda de la verdad en un mundo oscuro y corrupto.
-            Ahora a Dani se le acercan todas las chicas de la ciudad
+        <img src="img/4.png" alt="Capítulo 4">
+        <p>
+            La mujer resultaba ser una androide avanzada creada para infiltrarse en organizaciones criminales.
+            Con su ayuda, Dani y Juan logran desactivar el arma de neón y frustrar los planes de Luis.
+            Sin embargo, durante el enfrentamiento final, Juan resulta gravemente herido.
+            Dani se enfrenta a una difícil decisión: salvar a su amigo o capturar a Luis.
+            Opta por salvar a Juan, demostrando que la humanidad y la lealtad aún prevalecen en un mundo dominado por la
+            tecnología.
+            La androide, mata a Luis y desaparece en la noche, dejando a Dani y Juan para reconstruir sus vidas en una
+            ciudad que aún lucha por encontrar su camino.
+            La historia termina con Dani reflexionando sobre la naturaleza de la humanidad y la tecnología,
+            preguntándose si algún día podrán coexistir en armonía.
         </p>
     </div>
 
+    <!-- Conclusión: mensaje y cierre de la historia -->
     <h2 id="Conclusion"><a href="#indice">Conclusión</a></h2>
     <div style="display: flex;">
-        <img src="conclusión.jpg" alt="Conclusión" width="300" style="margin-right: 20px;">
-        <p>Esta historia nos muestra cómo incluso en los entornos más oscuros, la verdad y la justicia pueden prevalecer
-            cuando hay valor, inteligencia y voluntad de cambiar el mundo.</p>
+        <img src="img/conclusión.png" alt="Conclusión">
+        <p>
+            "El arma de neón" es una historia que explora temas de lealtad, redención y la lucha por la humanidad en un
+            mundo cada vez más dominado por la tecnología.
+            A través de los personajes de Dani, Juan y la androide, se muestra que incluso en las circunstancias más
+            oscuras,
+            la esperanza y la bondad pueden prevalecer. La historia también rinde homenaje a la estética y los temas de
+            Blade Runner,
+            ofreciendo una nueva perspectiva sobre un universo ya fascinante.
+        </p>
     </div>
 
     <div style="text-align: center;font-size: 30px; margin-top: 40px;">
         <a href="creditos.html">Créditos</a>
     </div>
 
-
-    <div style="text-align: center; margin-top: 40px;">
-        <form action="/procesar-opinion" method="post">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br><br>
-
-            <label for="opinion">¿Qué te ha parecido la historia?</label><br>
-            <textarea id="opinion" name="opinion" rows="4" cols="50"></textarea><br><br>
-
-            <button type="submit">Enviar opinión</button>
-        </form>
-    </div>
 </body>
 
 </html>
